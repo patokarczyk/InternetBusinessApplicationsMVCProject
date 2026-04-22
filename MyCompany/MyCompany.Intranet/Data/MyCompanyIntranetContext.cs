@@ -15,5 +15,7 @@ namespace MyCompany.Intranet.Data
         }
 
         public DbSet<Warehouse> Warehouse { get; set; } = default!;
+        public DbSet<Supplier> Supplier { get; set; } = default!;
+        public DbSet<Category> Category { get; set; } = default!;
     }
 }

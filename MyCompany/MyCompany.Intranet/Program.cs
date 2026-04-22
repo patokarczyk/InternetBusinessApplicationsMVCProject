@@ -26,6 +26,8 @@ namespace MyCompany.Intranet
                 app.UseHsts();
             }
 
+            InitializeAutomaticlyMigrations(app);
+
             app.UseHttpsRedirection();
             app.UseRouting();
 
@@ -38,6 +40,23 @@ namespace MyCompany.Intranet
                 .WithStaticAssets();
 
             app.Run();
+        }
+
+        private static void InitializeAutomaticlyMigrations(WebApplication app)
+        {
+            using (var scope = app.Services.CreateScope())
+            {
+                try
+                {
+                    var dbContext = scope.ServiceProvider.GetRequiredService<MyCompanyIntranetContext>();
+                    dbContext.Database.Migrate();
+                }
+                catch (Exception ex)
+                {
+                    var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
+                    logger.LogError(ex, "Error during database migration");
+                }
+            }
         }
     }
 }
