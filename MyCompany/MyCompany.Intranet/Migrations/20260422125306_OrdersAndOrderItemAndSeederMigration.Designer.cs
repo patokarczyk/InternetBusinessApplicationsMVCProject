@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyCompany.Intranet.Data;
 
@@ -11,9 +12,11 @@ using MyCompany.Intranet.Data;
 namespace MyCompany.Intranet.Migrations
 {
     [DbContext(typeof(MyCompanyIntranetContext))]
-    partial class MyCompanyIntranetContextModelSnapshot : ModelSnapshot
+    [Migration("20260422125306_OrdersAndOrderItemAndSeederMigration")]
+    partial class OrdersAndOrderItemAndSeederMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -200,21 +203,21 @@ namespace MyCompany.Intranet.Migrations
                         {
                             IdOrder = 1,
                             IdSupplier = 1,
-                            OrderDate = new DateTime(2022, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            OrderDate = new DateTime(2026, 4, 22, 14, 53, 5, 226, DateTimeKind.Local).AddTicks(9937),
                             Status = "New"
                         },
                         new
                         {
                             IdOrder = 2,
                             IdSupplier = 2,
-                            OrderDate = new DateTime(2024, 4, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            OrderDate = new DateTime(2026, 4, 22, 14, 53, 5, 231, DateTimeKind.Local).AddTicks(276),
                             Status = "Delivered"
                         },
                         new
                         {
                             IdOrder = 3,
                             IdSupplier = 3,
-                            OrderDate = new DateTime(2023, 3, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            OrderDate = new DateTime(2026, 4, 22, 14, 53, 5, 231, DateTimeKind.Local).AddTicks(303),
                             Status = "Pending"
                         });
                 });
