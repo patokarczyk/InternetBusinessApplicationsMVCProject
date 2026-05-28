@@ -53,3 +53,9 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+/MyCompany/.vs/ProjectEvaluation/mycompany.metadata.v10.bin
+/MyCompany/.vs/ProjectEvaluation/mycompany.projects.v10.bin
+/MyCompany/.vs/ProjectEvaluation/mycompany.strings.v10.bin
+/MyCompany/.vs/MyCompany.slnx/v18/DocumentLayout.json
+/MyCompany/.vs/MyCompany.slnx/v18/DocumentLayout.backup.json
+/MyCompany/.vs/MyCompany.slnx/v18/.suo
