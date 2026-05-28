@@ -47,7 +47,7 @@ echo ""
 echo "✅ Cleaning complete!"
 
 # Create zip archive
-ZIP_NAME="InternetBusinessApplicationsMVCSummer2026-$(date +%Y%m%d-%H%M).zip"
+ZIP_NAME="InternetBusinessApplicationsMVCProject-$(date +%Y%m%d-%H%M).zip"
 echo "📦 Creating zip archive: $ZIP_NAME..."
 cd "$(dirname "$PROJECT_DIR")"
 zip -r "$ZIP_NAME" "$(basename "$PROJECT_DIR")" -x "*/node_modules/*" -x "*/.git/*" -x "*/bin/*" -x "*/obj/*"
