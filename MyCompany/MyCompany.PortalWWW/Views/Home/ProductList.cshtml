@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewData["Title"] = "Produkty";
+}
+
+<h1 class="mb-4">Lista produktów</h1>
+
+<table class="table table-striped table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Nazwa</th>
+            <th>Ilość</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Laptop</td>
+            <td>10</td>
+            <td><span class="badge bg-success">OK</span></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Myszka</td>
+            <td>0</td>
+            <td><span class="badge bg-danger">Brak</span></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Klawiatura</td>
+            <td>5</td>
+            <td><span class="badge bg-warning text-dark">Mało</span></td>
+        </tr>
+    </tbody>
+</table>
+
+<a class="btn btn-success">+ Dodaj produkt</a>
