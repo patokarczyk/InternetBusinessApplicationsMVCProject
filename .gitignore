@@ -52,3 +52,14 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+/MyCompany/.vs/MyCompany.slnx/DesignTimeBuild/.dtbcache.v2
+/MyCompany/.vs/MyCompany.slnx/FileContentIndex/374081e5-fbea-4e61-b8d7-7658920d93e0.vsidx
+/MyCompany/.vs/MyCompany.slnx/FileContentIndex/7c886dab-5d25-49c1-a204-82f27377bde7.vsidx
+/MyCompany/.vs/MyCompany.slnx/FileContentIndex/86e9f2b0-c94d-4a32-b792-fed696f19a0d.vsidx
+/MyCompany/.vs/MyCompany.slnx/FileContentIndex/8ff0f0b8-ae5b-4e18-a47e-18ac7b34d87f.vsidx
+/MyCompany/.vs/MyCompany.slnx/FileContentIndex/e87da55e-51bb-46dc-b580-5aa46c6b27e6.vsidx
+/MyCompany/.vs/MyCompany.slnx/v18/.futdcache.v2
+/MyCompany/.vs/MyCompany.slnx/v18/.suo
+/MyCompany/.vs/MyCompany.slnx/v18/DocumentLayout.backup.json
+/MyCompany/.vs/MyCompany.slnx/v18/DocumentLayout.json
+/MyCompany/MyCompany.Intranet/Properties/launchSettings.json
