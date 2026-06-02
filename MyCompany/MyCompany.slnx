@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="MyCompany.Intranet/MyCompany.Intranet.csproj" Id="af7bc43f-ac42-4328-abce-aa67c977bd79" />
+  <Project Path="MyCompany.PortalWWW/MyCompany.PortalWWW.csproj" />
+  <Project Path="MyCompanyData/MyCompanyData.csproj" Id="cfdbed68-ea37-41fe-b4ee-4d21f98ac90a" />
+</Solution>
